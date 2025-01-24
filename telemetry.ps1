@@ -1,6 +1,6 @@
 # Define variables
-$Clients = Get-ADComputer -Filter * -SearchBase "OU=LabUtilisateurs,DC=lab,DC=lan" | Select-Object -ExpandProperty Name
-$TelemetryLevel = 0 # 0 = Security (most restrictive)
+$Clients = Get-ADComputer -Filter * -SearchBase "OU=Paris,DC=billu,DC=com" | Select-Object -ExpandProperty Name
+$TelemetryLevel = 1
 $RegistryPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection"
 $RegistryKey = "AllowTelemetry"
 
